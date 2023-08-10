@@ -34,7 +34,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://ryusuke66.github.io/tip-calculator-app)
+- Live Site URL: [Tip calculator app](https://ryusuke66.github.io/tip-calculator-app)
 
 ## My process
 
