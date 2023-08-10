@@ -188,6 +188,7 @@ input[type=radio]:checked ~ span{
     font-size: 20px;
     border-radius: 5px;
     border: none;
+    color: hsl(183, 100%, 15%);
     background-color: hsl(172, 67%, 45%);
     transition: .1s;
     cursor: pointer;
