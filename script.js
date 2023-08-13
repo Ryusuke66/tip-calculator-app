@@ -19,6 +19,11 @@ form.onchange = () => {
         error[0].classList.add("active");
         error[0].textContent = "Can't be empty";
         valid = false;
+    }else if (bill.value == "0") {
+        bill.style.border = "2px solid hsl(0, 88%, 66%)";
+        error[0].classList.add("active");
+        error[0].textContent = "Can't be zero";
+        valid = false;
     } else {
         bill.style.border = "none";
         error[0].classList.remove('active');
@@ -28,6 +33,11 @@ form.onchange = () => {
         people.style.border = "2px solid hsl(0, 88%, 66%)";
         error[1].classList.add("active");
         error[1].textContent = "Can't be empty";
+        valid = false;
+    } else if (people.value == "0") {
+        people.style.border = "2px solid hsl(0, 88%, 66%)";
+        error[1].classList.add("active");
+        error[1].textContent = "Can't be zero";
         valid = false;
     } else {
         people.style.border = "none";
@@ -44,7 +54,7 @@ form.onchange = () => {
         customTip.value = "";
     }
 
-    if (bill.value <= 500000 && people.value !== '' && (checkedButton || customTip)) {
+    if (bill.value <= 500000 && people.value !== '' && people.value !== "0" && (checkedButton || customTip)) {
         valid = true;
     }
 
